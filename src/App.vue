@@ -9,7 +9,9 @@
         </div>
         <template v-if="notiArray.length > 0">
             <div v-for="(noti, i) in notiArray" :key="i">
-                {{noti.answer}} : {{noti.question}} = {{noti.userNumber}}
+                <div ref="board">
+                    {{noti.answer}} : {{noti.question}} = {{noti.userNumber}}
+                </div>
             </div>
         </template>
     </div>
@@ -49,6 +51,13 @@ export default {
                 
                 if(this.firstNumber === 10){
                     this.firstNumber = 2;
+
+                    this.$nextTick(() => {
+                        setTimeout(() => {
+                            this.$refs.board[0].remove();
+                            alert('completed!!!!');
+                        }, 1000);
+                    });
                 }
             }
         },
