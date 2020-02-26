@@ -1,4 +1,7 @@
-# times_table
+# multiplication_table_game
+
+## demo
+https://multiplication-table-gam-78e90.firebaseapp.com/
 
 ## Project setup
 ```
@@ -19,7 +22,3 @@ yarn build
 ```
 yarn lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# times_table_game
